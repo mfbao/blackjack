@@ -1,0 +1,323 @@
+<html>
+<head>
+<title>21点游戏</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+#container{width: 640px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -320px;
+	margin-top: -250px;
+    background: url(image/bg.jpg);
+    border: 1px solid red;
+
+}
+#start{position: absolute;
+	left: 540px;
+	top: 420px;
+	border: 1px solid;
+	border-radius:25px;
+	background-color: blue;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+
+}
+.dl{position: absolute;
+	left: 10px;
+	top: 20px;
+	border: 1px solid;
+	border-radius:25px;
+	background-color: yellow;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+    text-align: center;
+}
+.pl{position: absolute;
+	left: 10px;
+	top: 20px;
+	border: 1px solid;
+	border-radius:25px;
+	background-color: yellow;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+}
+#dealer{position: absolute;
+	left: 200px;
+	top: 50px;
+
+}
+#you{position: absolute;
+	left: 190px;
+	top: 250px;
+
+}
+.hit{position: absolute;
+	left: 20px;
+	top: 120px;
+	background-color: red;
+      border: 1px solid red;
+      width: 50px;
+      height: 30px;}
+
+.stand{position: absolute;
+	left: 160px;
+	top: 120px;
+	background-color: red;
+      border: 1px solid red;
+      width: 50px;
+      height: 30px;}
+img{float: left;
+	margin-left: 60px;
+
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+
+<form>
+
+<div id="dealer">
+
+<input type="text" name="dealer" class="dl">
+<img src="image/11.png"  style="display:none" id="t11"/>
+<img src="image/12.png"  style="display:none" id="t12"/>
+<img src="image/13.png"  style="display:none" id="t13"/>
+<img src="image/14.png"  style="display:none" id="t14"/>
+<img src="image/21.png"  style="display:none" id="t21"/>
+<img src="image/22.png"  style="display:none" id="t22"/>
+<img src="image/23.png"  style="display:none" id="t23"/>
+<img src="image/24.png"  style="display:none" id="t24"/>
+<img src="image/31.png"  style="display:none" id="t31"/>
+<img src="image/32.png"  style="display:none" id="t32"/>
+<img src="image/33.png"  style="display:none" id="t33"/>
+<img src="image/34.png"  style="display:none" id="t34"/>
+<img src="image/41.png"  style="display:none" id="t41"/>
+<img src="image/42.png"  style="display:none" id="t42"/>
+<img src="image/43.png"  style="display:none" id="t43"/>
+<img src="image/44.png"  style="display:none" id="t44"/>
+<img src="image/51.png"  style="display:none" id="t51"/>
+<img src="image/52.png"  style="display:none" id="t52"/>
+<img src="image/53.png"  style="display:none" id="t53"/>
+<img src="image/54.png"  style="display:none" id="t54"/>
+<img src="image/61.png"  style="display:none" id="t61"/>
+<img src="image/62.png"  style="display:none" id="t62"/>
+<img src="image/63.png"  style="display:none" id="t63"/>
+<img src="image/64.png"  style="display:none" id="t64"/>
+<img src="image/71.png"  style="display:none" id="t71"/>
+<img src="image/72.png"  style="display:none" id="t72"/>
+<img src="image/73.png"  style="display:none" id="t73"/>
+<img src="image/74.png"  style="display:none" id="t74"/>
+<img src="image/81.png"  style="display:none" id="t81"/>
+<img src="image/82.png"  style="display:none" id="t82"/>
+<img src="image/83.png"  style="display:none" id="t83"/>
+<img src="image/84.png"  style="display:none" id="t84"/>
+<img src="image/91.png"  style="display:none" id="t91"/>
+<img src="image/92.png"  style="display:none" id="t92"/>
+<img src="image/93.png"  style="display:none" id="t93"/>
+<img src="image/94.png"  style="display:none" id="t94"/>
+<img src="image/101.png"  style="display:none" id="t101"/>
+<img src="image/102.png"  style="display:none" id="t102"/>
+<img src="image/103.png"  style="display:none" id="t103"/>
+<img src="image/104.png"  style="display:none" id="t104"/>
+<img src="image/111.png"  style="display:none" id="t111"/>
+<img src="image/112.png"  style="display:none" id="t112"/>
+<img src="image/113.png"  style="display:none" id="t113"/>
+<img src="image/114.png"  style="display:none" id="t114"/>
+<img src="image/121.png"  style="display:none" id="t121"/>
+<img src="image/122.png"  style="display:none" id="t122"/>
+<img src="image/123.png"  style="display:none" id="t123"/>
+<img src="image/124.png"  style="display:none" id="t124"/>
+<img src="image/131.png"  style="display:none" id="t131"/>
+<img src="image/132.png"  style="display:none" id="t132"/>
+<img src="image/133.png"  style="display:none" id="t133"/>
+<img src="image/134.png"  style="display:none" id="t134"/>
+</div>
+
+<div id="you" >
+
+<input type="text" name="you" class="pl">
+<img src="image/11.png"  style="display:none" id="i11"/>
+<img src="image/12.png"  style="display:none" id="i12"/>
+<img src="image/13.png"  style="display:none" id="i13"/>
+<img src="image/14.png"  style="display:none" id="i14"/>
+<img src="image/21.png"  style="display:none" id="i21"/>
+<img src="image/22.png"  style="display:none" id="i22"/>
+<img src="image/23.png"  style="display:none" id="i23"/>
+<img src="image/24.png"  style="display:none" id="i24"/>
+<img src="image/31.png"  style="display:none" id="i31"/>
+<img src="image/32.png"  style="display:none" id="i32"/>
+<img src="image/33.png"  style="display:none" id="i33"/>
+<img src="image/34.png"  style="display:none" id="i34"/>
+<img src="image/41.png"  style="display:none" id="i41"/>
+<img src="image/42.png"  style="display:none" id="i42"/>
+<img src="image/43.png"  style="display:none" id="i43"/>
+<img src="image/44.png"  style="display:none" id="i44"/>
+<img src="image/51.png"  style="display:none" id="i51"/>
+<img src="image/52.png"  style="display:none" id="i52"/>
+<img src="image/53.png"  style="display:none" id="i53"/>
+<img src="image/54.png"  style="display:none" id="i54"/>
+<img src="image/61.png"  style="display:none" id="i61"/>
+<img src="image/62.png"  style="display:none" id="i62"/>
+<img src="image/63.png"  style="display:none" id="i63"/>
+<img src="image/64.png"  style="display:none" id="i64"/>
+<img src="image/71.png"  style="display:none" id="i71"/>
+<img src="image/72.png"  style="display:none" id="i72"/>
+<img src="image/73.png"  style="display:none" id="i73"/>
+<img src="image/74.png"  style="display:none" id="i74"/>
+<img src="image/81.png"  style="display:none" id="i81"/>
+<img src="image/82.png"  style="display:none" id="i82"/>
+<img src="image/83.png"  style="display:none" id="i83"/>
+<img src="image/84.png"  style="display:none" id="i84"/>
+<img src="image/91.png"  style="display:none" id="i91"/>
+<img src="image/92.png"  style="display:none" id="i92"/>
+<img src="image/93.png"  style="display:none" id="i93"/>
+<img src="image/94.png"  style="display:none" id="i94"/>
+<img src="image/101.png"  style="display:none" id="i101"/>
+<img src="image/102.png"  style="display:none" id="i102"/>
+<img src="image/103.png"  style="display:none" id="i103"/>
+<img src="image/104.png"  style="display:none" id="i104"/>
+<img src="image/111.png"  style="display:none" id="i111"/>
+<img src="image/112.png"  style="display:none" id="i112"/>
+<img src="image/113.png"  style="display:none" id="i113"/>
+<img src="image/114.png"  style="display:none" id="i114"/>
+<img src="image/121.png"  style="display:none" id="i121"/>
+<img src="image/122.png"  style="display:none" id="i122"/>
+<img src="image/123.png"  style="display:none" id="i123"/>
+<img src="image/124.png"  style="display:none" id="i124"/>
+<img src="image/131.png"  style="display:none" id="i131"/>
+<img src="image/132.png"  style="display:none" id="i132"/>
+<img src="image/133.png"  style="display:none" id="i133"/>
+<img src="image/134.png"  style="display:none" id="i134"/>
+</br></br>&nbsp;
+<input type="button" value="hit" class="hit" onclick=user(this.form)>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="stand" class="stand" onclick="Dealer(this.form);final(this.form);">
+</div>
+<input type="button" id="start" value="start" onclick=begin(this.form)>
+
+</form>
+</div>
+<script type="text/javascript">
+function random(number)
+{
+day = new Date();
+hour = day.getHours();
+min = day.getMinutes();
+sec = day.getSeconds();
+return (((hour + 1) * (min + 1) * sec)  % number) + 1;
+}
+function pickcolor()
+{
+color = random(4);
+if(color == 1)
+return "1";
+if(color == 2)
+return "2";
+if(color == 3)
+return "3";
+return "4";
+}
+function cardname(card)
+{
+if(card == 1)
+return "Ace";
+if(card == 11)
+return "Jack";
+if(card == 12)
+return "Queen";
+if(card == 13)
+return "King";
+return "" + card;
+}
+function cardvalue(card)
+{
+if(card == 1)
+return 11;
+if(card > 10)
+return 10;
+return card;
+}
+function pickcard(player)
+{
+card = random(13);
+suit = pickcolor();
+str="i"+card+suit;
+document.getElementById(str).style.display="inline";
+return cardvalue(card);
+}
+function begin(form)
+{
+form.dealer.value = 0;
+form.you.value = 0;
+form.dealer.value = eval(form.dealer.value) + pickzcard("Dealer");
+form.you.value = eval(form.you.value) + pickcard("You");
+}
+function pickzcard(){
+	card = random(13);
+suit = pickcolor();
+str="t"+card+suit;
+document.getElementById(str).style.display="inline";
+return cardvalue(card);
+}
+function Dealer(form)
+{
+while(form.dealer.value < 17)
+{
+form.dealer.value = eval(form.dealer.value) + pickzcard("Dealer");
+}
+
+}
+function user(form)
+{
+form.you.value = eval(form.you.value) + pickcard("You");
+if(form.you.value > 21)
+{
+alert("不好意思，你爆了!");
+for (var i = 103; i >= 0; i--) {
+	document.getElementsByTagName("img")[i].style.display="none"
+};
+
+}
+
+
+}
+function final(form)
+{
+if(form.dealer.value > 21)
+{
+alert("庄家爆了，你赢!");
+
+}
+else   if(form.you.value > form.dealer.value)
+{
+alert("你赢了!");
+
+}
+else
+if(form.dealer.value == form.you.value)
+{
+alert("平局!");
+
+}
+else
+{
+alert("庄家赢了!");
+
+}
+
+
+}
+</script>
+</body>
+</html>
